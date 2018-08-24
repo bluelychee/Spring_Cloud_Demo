@@ -28,6 +28,6 @@ public class HelloController {
     public String index(){
         ServiceInstance instance =client.getLocalServiceInstance();
         logger.info("/hello,host "+instance.getHost()+" ,service_id "+instance.getServiceId());
-        return "Hello from "+port;
+        return "World from "+port;
     }
 }
