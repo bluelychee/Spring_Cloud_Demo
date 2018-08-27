@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.qftx</groupId>
+	<artifactId>spring-cloud-demo</artifactId>
+	<packaging>pom</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.13.RELEASE</version>
+	</parent>
+    <modules>
+        <module>spring-cloud-eureka-provider</module>
+        <module>spring-cloud-eureka-provider1</module>
+		<module>spring-cloud-eureka-server</module>
+		<module>spring-cloud-ribon-consumer</module>
+		<module>spring-cloud-zuul-gate</module>
+    </modules>
+</project>
