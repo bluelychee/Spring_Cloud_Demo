@@ -4,34 +4,33 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.qftx</groupId>
-	<artifactId>spring-cloud-ribon-consumer</artifactId>
+	<artifactId>spring-cloud-config-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>spring-cloud-ribon-consumer</name>
-	<description>spring-cloud-ribon-consumer project for Spring Boot</description>
+	<name>spring-cloud-config-server</name>
+	<description>spring-cloud-config-server project for Spring Boot</description>
 
 	<parent>
 		<artifactId>spring-cloud-demo</artifactId>
 		<groupId>com.qftx</groupId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+			<artifactId>spring-cloud-config-server</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-ribbon</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
-		</dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
 	</dependencies>
 </project>

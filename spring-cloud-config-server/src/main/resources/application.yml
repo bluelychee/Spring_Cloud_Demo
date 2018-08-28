@@ -1,0 +1,18 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  profiles:
+      active: native
+  cloud:
+    config:
+      server:
+        native:
+        search-locations: E:/conf
+
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://127.0.0.1:1111/eureka,http://127.0.0.1:1111/eureka

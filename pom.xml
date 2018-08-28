@@ -13,11 +13,44 @@
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.5.13.RELEASE</version>
 	</parent>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Edgware.SR3</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
     <modules>
         <module>spring-cloud-eureka-provider</module>
         <module>spring-cloud-eureka-provider1</module>
 		<module>spring-cloud-eureka-server</module>
 		<module>spring-cloud-ribon-consumer</module>
 		<module>spring-cloud-zuul-gate</module>
+        <module>spring-cloud-config-server</module>
     </modules>
 </project>
